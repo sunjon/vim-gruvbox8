@@ -32,22 +32,22 @@ hi! link vCursor Cursor
 if (has('termguicolors') && &termguicolors) || has('gui_running')
   if &background ==# 'dark'
     let g:terminal_ansi_colors = ['#282828', '#cc241d', '#98971a', '#d79921',
-          \ '#458588', '#b16286', '#689d6a', '#a89984', '#928374', '#fb4934',
-          \ '#b8bb26', '#fabd2f', '#83a598', '#d3869b', '#8ec07c', '#ebdbb2']
+          \ '#458588', '#b16286', '#689d6a', '#a89984', '#7c6f64', '#fb4934',
+          \ '#b8bb26', '#fabd2f', '#83a597', '#d3869b', '#8ec07c', '#ebdbb2']
     if has('nvim')
-      let g:terminal_color_0 = '#282828'
+      let g:terminal_color_0 = '#202020'
       let g:terminal_color_1 = '#cc241d'
       let g:terminal_color_2 = '#98971a'
       let g:terminal_color_3 = '#d79921'
       let g:terminal_color_4 = '#458588'
       let g:terminal_color_5 = '#b16286'
       let g:terminal_color_6 = '#689d6a'
-      let g:terminal_color_7 = '#a89984'
-      let g:terminal_color_8 = '#928374'
+      let g:terminal_color_7 = '#bdae93'
+      let g:terminal_color_8 = '#7c6f64'
       let g:terminal_color_9 = '#fb4934'
       let g:terminal_color_10 = '#b8bb26'
       let g:terminal_color_11 = '#fabd2f'
-      let g:terminal_color_12 = '#83a598'
+      let g:terminal_color_12 = '#83a597'
       let g:terminal_color_13 = '#d3869b'
       let g:terminal_color_14 = '#8ec07c'
       let g:terminal_color_15 = '#ebdbb2'
@@ -55,30 +55,30 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     if get(g:, 'gruvbox_transp_bg', 0) && !has('gui_running')
       hi Normal guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi CursorLineNr guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi FoldColumn guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi FoldColumn guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi SignColumn guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi VertSplit guifg=#665c54 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     else
       hi Normal guifg=#ebdbb2 guibg=#282828 guisp=NONE gui=NONE cterm=NONE
       hi CursorLineNr guifg=#fabd2f guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
-      hi FoldColumn guifg=#928374 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
+      hi FoldColumn guifg=#7c6f64 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
       hi SignColumn guifg=#ebdbb2 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
       hi VertSplit guifg=#665c54 guibg=#282828 guisp=NONE gui=NONE cterm=NONE
     endif
     hi ColorColumn guifg=NONE guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
-    hi Comment guifg=#928374 guibg=NONE guisp=NONE gui=italic cterm=italic
+    hi Comment guifg=#7c6f64 guibg=NONE guisp=NONE gui=italic cterm=italic
     hi CursorLine guifg=NONE guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
     hi Error guifg=#fb4934 guibg=#282828 guisp=NONE gui=bold,reverse cterm=bold,reverse
     hi ErrorMsg guifg=#282828 guibg=#fb4934 guisp=NONE gui=bold cterm=bold
-    hi Folded guifg=#928374 guibg=#3c3836 guisp=NONE gui=italic cterm=italic
+    hi Folded guifg=#7c6f64 guibg=#3c3836 guisp=NONE gui=italic cterm=italic
     hi LineNr guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi MatchParen guifg=NONE guibg=#665c54 guisp=NONE gui=bold cterm=bold
     hi NonText guifg=#504945 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi Pmenu guifg=#ebdbb2 guibg=#504945 guisp=NONE gui=NONE cterm=NONE
     hi PmenuSbar guifg=NONE guibg=#504945 guisp=NONE gui=NONE cterm=NONE
-    hi PmenuSel guifg=#504945 guibg=#83a598 guisp=NONE gui=bold cterm=bold
+    hi PmenuSel guifg=#504945 guibg=#83a597 guisp=NONE gui=bold cterm=bold
     hi PmenuThumb guifg=NONE guibg=#7c6f64 guisp=NONE gui=NONE cterm=NONE
-    hi SpecialKey guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi SpecialKey guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi StatusLine guifg=#504945 guibg=#ebdbb2 guisp=NONE gui=reverse cterm=reverse
     hi StatusLineNC guifg=#3c3836 guibg=#a89984 guisp=NONE gui=reverse cterm=reverse
     hi TabLine guifg=#7c6f64 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
@@ -87,8 +87,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi ToolbarButton guifg=#fbf1c7 guibg=#665c54 guisp=NONE gui=bold cterm=bold
     hi ToolbarLine guifg=NONE guibg=#665c54 guisp=NONE gui=NONE cterm=NONE
     hi Visual guifg=NONE guibg=#665c54 guisp=NONE gui=NONE cterm=NONE
-    hi WildMenu guifg=#83a598 guibg=#504945 guisp=NONE gui=bold cterm=bold
-    hi Conceal guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi WildMenu guifg=#83a597 guibg=#504945 guisp=NONE gui=bold cterm=bold
+    hi Conceal guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi Cursor guifg=NONE guibg=NONE guisp=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
     hi DiffAdd guifg=#b8bb26 guibg=#282828 guisp=NONE gui=reverse cterm=reverse
     hi DiffChange guifg=#8ec07c guibg=#282828 guisp=NONE gui=reverse cterm=reverse
@@ -102,7 +102,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi Question guifg=#fe8019 guibg=NONE guisp=NONE gui=bold cterm=bold
     hi Search guifg=#fabd2f guibg=#282828 guisp=NONE gui=reverse cterm=reverse
     hi SpellBad guifg=#fb4934 guibg=NONE guisp=#fb4934 gui=italic,undercurl cterm=italic,undercurl
-    hi SpellCap guifg=#83a598 guibg=NONE guisp=#83a598 gui=italic,undercurl cterm=italic,undercurl
+    hi SpellCap guifg=#83a597 guibg=NONE guisp=#83a597 gui=italic,undercurl cterm=italic,undercurl
     hi SpellLocal guifg=#8ec07c guibg=NONE guisp=#8ec07c gui=italic,undercurl cterm=italic,undercurl
     hi SpellRare guifg=#d3869b guibg=NONE guisp=#d3869b gui=italic,undercurl cterm=italic,undercurl
     hi Title guifg=#b8bb26 guibg=NONE guisp=NONE gui=bold cterm=bold
@@ -118,7 +118,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi Exception guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi Float guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi Function guifg=#b8bb26 guibg=NONE guisp=NONE gui=bold cterm=bold
-    hi Identifier guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi Identifier guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi Ignore guifg=fg guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi Include guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi Keyword guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -139,7 +139,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi Todo guifg=fg guibg=#282828 guisp=NONE gui=bold,italic cterm=bold,italic
     hi Type guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi Typedef guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi Underlined guifg=#83a598 guibg=NONE guisp=NONE gui=underline cterm=underline
+    hi Underlined guifg=#83a597 guibg=NONE guisp=NONE gui=underline cterm=underline
     hi CursorIM guifg=NONE guibg=NONE guisp=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
     if !s:italics
       hi Comment gui=NONE cterm=NONE
@@ -157,7 +157,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi String gui=NONE cterm=NONE
     endif
     hi NormalMode guifg=#a89984 guibg=#282828 guisp=NONE gui=reverse cterm=reverse
-    hi InsertMode guifg=#83a598 guibg=#282828 guisp=NONE gui=reverse cterm=reverse
+    hi InsertMode guifg=#83a597 guibg=#282828 guisp=NONE gui=reverse cterm=reverse
     hi ReplaceMode guifg=#8ec07c guibg=#282828 guisp=NONE gui=reverse cterm=reverse
     hi VisualMode guifg=#fe8019 guibg=#282828 guisp=NONE gui=reverse cterm=reverse
     hi CommandMode guifg=#d3869b guibg=#282828 guisp=NONE gui=reverse cterm=reverse
@@ -172,10 +172,10 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     if get(g:, "gruvbox_plugin_hi_groups", 0)
       hi ALEError guifg=NONE guibg=NONE guisp=#fb4934 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
       hi ALEWarning guifg=NONE guibg=NONE guisp=#fb4934 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
-      hi ALEInfo guifg=NONE guibg=NONE guisp=#83a598 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+      hi ALEInfo guifg=NONE guibg=NONE guisp=#83a597 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
       hi ALEErrorSign guifg=#fb4934 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
       hi ALEWarningSign guifg=#fabd2f guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
-      hi ALEInfoSign guifg=#83a598 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
+      hi ALEInfoSign guifg=#83a597 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
       hi BufTabLineCurrent guifg=#282828 guibg=#a89984 guisp=NONE gui=NONE cterm=NONE
       hi BufTabLineActive guifg=#a89984 guibg=#504945 guisp=NONE gui=NONE cterm=NONE
       hi BufTabLineHidden guifg=#7c6f64 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
@@ -183,10 +183,10 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi CtrlPMatch guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi CtrlPNoEntries guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi CtrlPPrtBase guifg=#504945 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi CtrlPPrtCursor guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi CtrlPPrtCursor guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi CtrlPLinePre guifg=#504945 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi CtrlPMode1 guifg=#83a598 guibg=#504945 guisp=NONE gui=bold cterm=bold
-      hi CtrlPMode2 guifg=#282828 guibg=#83a598 guisp=NONE gui=bold cterm=bold
+      hi CtrlPMode1 guifg=#83a597 guibg=#504945 guisp=NONE gui=bold cterm=bold
+      hi CtrlPMode2 guifg=#282828 guibg=#83a597 guisp=NONE gui=bold cterm=bold
       hi CtrlPStats guifg=#a89984 guibg=#504945 guisp=NONE gui=bold cterm=bold
       hi DirvishPathTail guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi DirvishArg guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -219,18 +219,18 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi NERDTreeClosable guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi NERDTreeFile guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi NERDTreeExecFile guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi NERDTreeUp guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi NERDTreeUp guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi NERDTreeCWD guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi NERDTreeHelp guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi NERDTreeToggleOn guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi NERDTreeToggleOff guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi netrwDir guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi netrwClassify guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi netrwLink guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi netrwLink guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi netrwSymLink guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi netrwExe guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi netrwComment guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi netrwList guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi netrwComment guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi netrwList guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi netrwHelpCmd guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi netrwCmdSep guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi netrwVersion guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -255,20 +255,20 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
 
       let g:niji_dark_colours = g:rbpt_colorpairs
       let g:niji_light_colours = g:rbpt_colorpairs
-      hi ShowMarksHLl guifg=#83a598 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
-      hi ShowMarksHLu guifg=#83a598 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
-      hi ShowMarksHLo guifg=#83a598 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
-      hi ShowMarksHLm guifg=#83a598 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
+      hi ShowMarksHLl guifg=#83a597 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
+      hi ShowMarksHLu guifg=#83a597 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
+      hi ShowMarksHLo guifg=#83a597 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
+      hi ShowMarksHLm guifg=#83a597 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
       hi SignifySignAdd guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi SignifySignChange guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi SignifySignDelete guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi SignatureMarkText guifg=#83a598 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
+      hi SignatureMarkText guifg=#83a597 guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
       hi SignatureMarkerText guifg=#d3869b guibg=#3c3836 guisp=NONE gui=NONE cterm=NONE
       hi StartifyBracket guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi StartifyFile guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi StartifyNumber guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi StartifyPath guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi StartifySlash guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi StartifyNumber guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi StartifyPath guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi StartifySlash guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi StartifySection guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi StartifySpecial guifg=#504945 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi StartifyHeader guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -281,9 +281,9 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi multiple_cursors_visual guifg=NONE guibg=#504945 guisp=NONE gui=NONE cterm=NONE
       let g:vimshell_escape_colors = [
             \ '#7c6f64', '#fb4934', '#b8bb26', '#fabd2f',
-            \ '#83a598', '#d3869b', '#8ec07c', '#a89984',
+            \ '#83a597', '#d3869b', '#8ec07c', '#a89984',
             \ '#282828', '#fb4934', '#b8bb26', '#fe8019',
-            \ '#83a598', '#d3869b', '#8ec07c', '#fbf1c7'
+            \ '#83a597', '#d3869b', '#8ec07c', '#fbf1c7'
             \ ]
     endif
     if get(g:, "gruvbox_filetype_hi_groups", 0)
@@ -292,9 +292,9 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi diffChanged guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi diffFile guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi diffNewFile guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi diffLine guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi htmlTag guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi htmlEndTag guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi diffLine guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi htmlTag guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi htmlEndTag guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi htmlTagName guifg=#8ec07c guibg=NONE guisp=NONE gui=bold cterm=bold
       hi htmlArg guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi htmlScriptTag guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -309,22 +309,22 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi htmlUnderline guifg=fg guibg=#282828 guisp=NONE gui=underline cterm=underline
       hi htmlUnderlineItalic guifg=fg guibg=#282828 guisp=NONE gui=italic,underline cterm=italic,underline
       hi htmlItalic guifg=fg guibg=#282828 guisp=NONE gui=italic cterm=italic
-      hi xmlTag guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi xmlEndTag guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi xmlTagName guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi xmlEqual guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi xmlTag guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi xmlEndTag guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi xmlTagName guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi xmlEqual guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi docbkKeyword guifg=#8ec07c guibg=NONE guisp=NONE gui=bold cterm=bold
-      hi xmlDocTypeDecl guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi xmlDocTypeDecl guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi xmlDocTypeKeyword guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi xmlCdataStart guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi xmlCdataStart guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi xmlCdataCdata guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi dtdFunction guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi dtdFunction guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi dtdTagName guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi xmlAttrib guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi xmlProcessingDelim guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi dtdParamEntityPunct guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi dtdParamEntityDPunct guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi xmlAttribPunct guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi xmlProcessingDelim guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi dtdParamEntityPunct guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi dtdParamEntityDPunct guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi xmlAttribPunct guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi xmlEntity guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi xmlEntityPunct guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi vimCommentTitle guifg=#a89984 guibg=NONE guisp=NONE gui=bold cterm=bold
@@ -335,7 +335,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi vimSetSep guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi vimSep guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi vimContinue guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi clojureKeyword guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi clojureKeyword guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi clojureCond guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi clojureSpecial guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi clojureDefine guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -351,7 +351,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi! link clojureRegexpQuantifier clojureRegexpCharClass
       hi clojureParen guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi clojureAnonArg guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi clojureVariable guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi clojureVariable guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi clojureMacro guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi clojureMeta guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi clojureDeref guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -364,10 +364,10 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi pythonBuiltinFunc guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi pythonFunction guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi pythonDecorator guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi pythonInclude guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi pythonImport guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi pythonRun guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi pythonCoding guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi pythonInclude guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi pythonImport guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi pythonRun guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi pythonCoding guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi pythonOperator guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi pythonException guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi pythonExceptions guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -376,13 +376,13 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi pythonConditional guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi pythonRepeat guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi pythonDottedName guifg=#b8bb26 guibg=NONE guisp=NONE gui=bold cterm=bold
-      hi cssBraces guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi cssBraces guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi cssFunctionName guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi cssIdentifier guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi cssClassName guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi cssColor guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi cssSelectorOp guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi cssSelectorOp2 guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi cssColor guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi cssSelectorOp guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi cssSelectorOp2 guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi cssImportant guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi cssVendor guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi cssTextProp guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -409,7 +409,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi javaScriptBraces guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi javaScriptFunction guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi javaScriptIdentifier guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi javaScriptMember guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi javaScriptMember guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi javaScriptNumber guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi javaScriptNull guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi javaScriptParens guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -473,10 +473,10 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi jsExport guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsFrom guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsThis guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsParen guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsParen guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsOperator guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsSpreadOperator guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsSpreadExpression guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsSpreadExpression guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsClassKeyword guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsClassProperty guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsExtendsKeyword guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -486,7 +486,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi jsGlobalObjects guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsFunction guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsFuncParens guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsFuncBlock guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsFuncBlock guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsParens guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsNull guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsUndefined guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -494,34 +494,34 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi jsFunctionKey guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsBracket guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsObjectColon guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsObjectProp guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsObjectProp guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsFuncBraces guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsVariableDef guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsObjectValue guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsObjectValue guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsDestructuringBlock guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsParenIfElse guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsClassBlock guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsParenIfElse guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsClassBlock guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsFutureKeys guifg=#fe8019 guibg=NONE guisp=NONE gui=bold cterm=bold
       hi jsStorageClass guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsModuleKeyword guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsObjectShorthandProp guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsxRegion guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsxTagName guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsModuleKeyword guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsObjectShorthandProp guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsxRegion guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsxTagName guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsxComponentName guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsxEscapeJsAttributes guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsxEscapeJsContent guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsxEscapeJsAttributes guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsxEscapeJsContent guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsxAttrib guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsxAttributeBraces guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsxEqual guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsxString guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsxCloseTag guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsxEndTag guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsxEndString guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsxCloseString guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsxCloseTag guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsxEndTag guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsxEndString guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsxCloseString guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsxIfOperator guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsxElseOperator guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsxDot guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi jsxNamespace guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi jsxNamespace guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi jsxPunct guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi typeScriptReserved guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi typeScriptLabel guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -550,7 +550,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi purescriptHidingKeyword guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi purescriptAsKeyword guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi purescriptStructure guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi purescriptOperator guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi purescriptOperator guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi purescriptTypeVar guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi purescriptConstructor guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi purescriptFunction guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -564,11 +564,11 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi rubyStringDelimiter guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi rubyInterpolationDelimiter guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi objcTypeModifier guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi objcDirective guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi objcDirective guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi goDirective guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi goConstants guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi goDeclaration guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi goDeclType guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi goDeclType guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi goBuiltins guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi luaIn guifg=#fb4934 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi luaFunction guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -577,7 +577,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi moonExtendedOp guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi moonFunction guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi moonObject guifg=#fabd2f guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi javaAnnotation guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi javaAnnotation guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi javaDocTags guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi! link javaCommentTitle vimCommentTitle
       hi javaParen guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -614,24 +614,24 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi markdownCode guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi markdownCodeBlock guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi markdownCodeDelimiter guifg=#8ec07c guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi markdownBlockquote guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi markdownListMarker guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi markdownOrderedListMarker guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi markdownRule guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi markdownHeadingRule guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi markdownBlockquote guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi markdownListMarker guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi markdownOrderedListMarker guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi markdownRule guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi markdownHeadingRule guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi markdownUrlDelimiter guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi markdownLinkDelimiter guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi markdownLinkTextDelimiter guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi markdownHeadingDelimiter guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi markdownUrl guifg=#d3869b guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi markdownUrlTitleDelimiter guifg=#b8bb26 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi markdownLinkText guifg=#928374 guibg=NONE guisp=NONE gui=underline cterm=underline
+      hi markdownLinkText guifg=#7c6f64 guibg=NONE guisp=NONE gui=underline cterm=underline
       hi! link markdownIdDeclaration markdownLinkText
       hi haskellType guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi haskellIdentifier guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi haskellSeparator guifg=#ebdbb2 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi haskellDelimiter guifg=#a89984 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-      hi haskellOperators guifg=#83a598 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+      hi haskellOperators guifg=#83a597 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi haskellBacktick guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi haskellStatement guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
       hi haskellConditional guifg=#fe8019 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -665,7 +665,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   endif
   " Light background
   let g:terminal_ansi_colors = ['#fbf1c7', '#cc241d', '#98971a', '#d79921',
-        \ '#458588', '#b16286', '#689d6a', '#7c6f64', '#928374', '#9d0006',
+        \ '#458588', '#b16286', '#689d6a', '#7c6f64', '#7c6f64', '#9d0006',
         \ '#79740e', '#b57614', '#076678', '#8f3f71', '#427b58', '#3c3836']
   if has('nvim')
     let g:terminal_color_0 = '#fbf1c7'
@@ -676,7 +676,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     let g:terminal_color_5 = '#b16286'
     let g:terminal_color_6 = '#689d6a'
     let g:terminal_color_7 = '#7c6f64'
-    let g:terminal_color_8 = '#928374'
+    let g:terminal_color_8 = '#7c6f64'
     let g:terminal_color_9 = '#9d0006'
     let g:terminal_color_10 = '#79740e'
     let g:terminal_color_11 = '#b57614'
@@ -688,22 +688,22 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   if get(g:, 'gruvbox_transp_bg', 0) && !has('gui_running')
     hi Normal guifg=#3c3836 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi CursorLineNr guifg=#b57614 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi FoldColumn guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi FoldColumn guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi SignColumn guifg=#3c3836 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi VertSplit guifg=#bdae93 guibg=NONE guisp=NONE gui=NONE cterm=NONE
   else
     hi Normal guifg=#3c3836 guibg=#fbf1c7 guisp=NONE gui=NONE cterm=NONE
     hi CursorLineNr guifg=#b57614 guibg=#ebdbb2 guisp=NONE gui=NONE cterm=NONE
-    hi FoldColumn guifg=#928374 guibg=#ebdbb2 guisp=NONE gui=NONE cterm=NONE
+    hi FoldColumn guifg=#7c6f64 guibg=#ebdbb2 guisp=NONE gui=NONE cterm=NONE
     hi SignColumn guifg=#3c3836 guibg=#ebdbb2 guisp=NONE gui=NONE cterm=NONE
     hi VertSplit guifg=#bdae93 guibg=#fbf1c7 guisp=NONE gui=NONE cterm=NONE
   endif
   hi ColorColumn guifg=NONE guibg=#ebdbb2 guisp=NONE gui=NONE cterm=NONE
-  hi Comment guifg=#928374 guibg=NONE guisp=NONE gui=italic cterm=italic
+  hi Comment guifg=#7c6f64 guibg=NONE guisp=NONE gui=italic cterm=italic
   hi CursorLine guifg=NONE guibg=#ebdbb2 guisp=NONE gui=NONE cterm=NONE
   hi Error guifg=#9d0006 guibg=#fbf1c7 guisp=NONE gui=bold,reverse cterm=bold,reverse
   hi ErrorMsg guifg=#fbf1c7 guibg=#9d0006 guisp=NONE gui=bold cterm=bold
-  hi Folded guifg=#928374 guibg=#ebdbb2 guisp=NONE gui=italic cterm=italic
+  hi Folded guifg=#7c6f64 guibg=#ebdbb2 guisp=NONE gui=italic cterm=italic
   hi LineNr guifg=#a89984 guibg=NONE guisp=NONE gui=NONE cterm=NONE
   hi MatchParen guifg=NONE guibg=#bdae93 guisp=NONE gui=bold cterm=bold
   hi NonText guifg=#d5c4a1 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -711,7 +711,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi PmenuSbar guifg=NONE guibg=#d5c4a1 guisp=NONE gui=NONE cterm=NONE
   hi PmenuSel guifg=#d5c4a1 guibg=#076678 guisp=NONE gui=bold cterm=bold
   hi PmenuThumb guifg=NONE guibg=#a89984 guisp=NONE gui=NONE cterm=NONE
-  hi SpecialKey guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+  hi SpecialKey guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
   hi StatusLine guifg=#d5c4a1 guibg=#3c3836 guisp=NONE gui=reverse cterm=reverse
   hi StatusLineNC guifg=#ebdbb2 guibg=#7c6f64 guisp=NONE gui=reverse cterm=reverse
   hi TabLine guifg=#a89984 guibg=#ebdbb2 guisp=NONE gui=NONE cterm=NONE
@@ -852,17 +852,17 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi NERDTreeClosable guifg=#af3a03 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi NERDTreeFile guifg=#3c3836 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi NERDTreeExecFile guifg=#b57614 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi NERDTreeUp guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi NERDTreeUp guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi NERDTreeCWD guifg=#79740e guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi NERDTreeHelp guifg=#3c3836 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi NERDTreeToggleOn guifg=#79740e guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi NERDTreeToggleOff guifg=#9d0006 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi netrwDir guifg=#427b58 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi netrwClassify guifg=#427b58 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi netrwLink guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi netrwLink guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi netrwSymLink guifg=#3c3836 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi netrwExe guifg=#b57614 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi netrwComment guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi netrwComment guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi netrwList guifg=#076678 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi netrwHelpCmd guifg=#427b58 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi netrwCmdSep guifg=#665c54 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -900,8 +900,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi StartifyBracket guifg=#665c54 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi StartifyFile guifg=#3c3836 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi StartifyNumber guifg=#076678 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi StartifyPath guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi StartifySlash guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi StartifyPath guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi StartifySlash guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi StartifySection guifg=#b57614 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi StartifySpecial guifg=#d5c4a1 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi StartifyHeader guifg=#af3a03 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -947,17 +947,17 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi xmlTagName guifg=#076678 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi xmlEqual guifg=#076678 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi docbkKeyword guifg=#427b58 guibg=NONE guisp=NONE gui=bold cterm=bold
-    hi xmlDocTypeDecl guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi xmlDocTypeDecl guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi xmlDocTypeKeyword guifg=#8f3f71 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi xmlCdataStart guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi xmlCdataStart guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi xmlCdataCdata guifg=#8f3f71 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi dtdFunction guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi dtdFunction guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi dtdTagName guifg=#8f3f71 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi xmlAttrib guifg=#427b58 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi xmlProcessingDelim guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi dtdParamEntityPunct guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi dtdParamEntityDPunct guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi xmlAttribPunct guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi xmlProcessingDelim guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi dtdParamEntityPunct guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi dtdParamEntityDPunct guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi xmlAttribPunct guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi xmlEntity guifg=#af3a03 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi xmlEntityPunct guifg=#af3a03 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi vimCommentTitle guifg=#7c6f64 guibg=NONE guisp=NONE gui=bold cterm=bold
@@ -1247,18 +1247,18 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi markdownCode guifg=#427b58 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi markdownCodeBlock guifg=#427b58 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi markdownCodeDelimiter guifg=#427b58 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi markdownBlockquote guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi markdownListMarker guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi markdownOrderedListMarker guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi markdownRule guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi markdownHeadingRule guifg=#928374 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi markdownBlockquote guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi markdownListMarker guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi markdownOrderedListMarker guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi markdownRule guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
+    hi markdownHeadingRule guifg=#7c6f64 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi markdownUrlDelimiter guifg=#665c54 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi markdownLinkDelimiter guifg=#665c54 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi markdownLinkTextDelimiter guifg=#665c54 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi markdownHeadingDelimiter guifg=#af3a03 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi markdownUrl guifg=#8f3f71 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi markdownUrlTitleDelimiter guifg=#79740e guibg=NONE guisp=NONE gui=NONE cterm=NONE
-    hi markdownLinkText guifg=#928374 guibg=NONE guisp=NONE gui=underline cterm=underline
+    hi markdownLinkText guifg=#7c6f64 guibg=NONE guisp=NONE gui=underline cterm=underline
     hi! link markdownIdDeclaration markdownLinkText
     hi haskellType guifg=#3c3836 guibg=NONE guisp=NONE gui=NONE cterm=NONE
     hi haskellIdentifier guifg=#3c3836 guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -1531,9 +1531,9 @@ if s:t_Co >= 256
       hi multiple_cursors_visual ctermfg=NONE ctermbg=239 cterm=NONE
       let g:vimshell_escape_colors = [
             \ '#7c6f64', '#fb4934', '#b8bb26', '#fabd2f',
-            \ '#83a598', '#d3869b', '#8ec07c', '#a89984',
+            \ '#83a597', '#d3869b', '#8ec07c', '#a89984',
             \ '#282828', '#fb4934', '#b8bb26', '#fe8019',
-            \ '#83a598', '#d3869b', '#8ec07c', '#fbf1c7'
+            \ '#83a597', '#d3869b', '#8ec07c', '#fbf1c7'
             \ ]
     endif
     if get(g:, "gruvbox_filetype_hi_groups", 0)
